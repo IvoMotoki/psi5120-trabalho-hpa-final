@@ -1,0 +1,16 @@
+\begin{table}[ht]
+\centering
+\caption{Minikube HPA behavior-tuning comparison}
+\label{tab:minikube-tuning}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Run & First scale-up (s) & Peak replicas & Pending pods & Scale-down after load (s) & Replica-s \\
+\midrule
+Minikube baseline rerun & 103 & 10 & 0 & 421 & 5581 \\
+Minikube aggressive & 70 & 10 & 0 & 409 & 5560 \\
+Minikube fast scale-down & 70 & 10 & 0 & 353 & 4149 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
